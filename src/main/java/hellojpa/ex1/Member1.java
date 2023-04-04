@@ -1,4 +1,4 @@
-package hellojpa;
+package hellojpa.ex1;
 
 import javax.persistence.*;
 import java.time.LocalDate;

@@ -1,4 +1,7 @@
-package hellojpa;
+package hellojpa.ex1;
+
+import hellojpa.ex2.Team;
+import hellojpa.ex2.User;
 
 import javax.persistence.*;
 
@@ -99,12 +102,10 @@ public class JpaMain
 //
 //            System.out.println("=======================");
 
-            Member member = new Member();
-            member.setUsername("C");
-
-            em.persist(member);
-
-
+//            Member member = new Member();
+//            member.setUsername("C");
+//
+//            em.persist(member);
             tx.commit();
         }
         catch (Exception e)
