@@ -1,7 +1,6 @@
 package hellojpa;
 
 import javax.persistence.*;
-import java.util.List;
 
 public class JpaMain
 {
@@ -93,13 +92,17 @@ public class JpaMain
 
 
             // 준영속 상태
-            Member member = em.find(Member.class, 160L);
-            member.setName("AAA");
+//            Member member = em.find(Member.class, 160L);
+//            member.setName("AAA");
+//
+//            em.detach(member);
+//
+//            System.out.println("=======================");
 
-            em.detach(member);
+            Member member = new Member();
+            member.setUsername("C");
 
-            System.out.println("=======================");
-
+            em.persist(member);
 
 
             tx.commit();
